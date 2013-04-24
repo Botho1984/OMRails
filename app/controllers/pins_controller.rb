@@ -3,8 +3,8 @@ class PinsController < ApplicationController
 
   # GET /pins
   # GET /pins.json
-  def index
-    @pins = Pin.all
+  def index #how we're pulling the pins from the database
+    @pins = Pin.all #if you wanted user to only see pins they have acsess to @pins = current_user.pins.all
 
     respond_to do |format|
       format.html # index.html.erb
