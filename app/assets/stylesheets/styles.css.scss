@@ -1,0 +1,30 @@
+/*Changing the Font of the webpage HERE */
+/*$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+
+/*Changing the color of the NavBar from http://twitter.github.io/bootstrap/customize.html#variables
+$navbarBackgroundHighLight: white;
+$navbarBackground: white;*/
+$btnPrimaryBackground: purple;
+
+@import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+/*Changing the shadow on the NavBar HERE
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}*/
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
